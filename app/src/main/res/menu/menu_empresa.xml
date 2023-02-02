@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_novo_produto"
+        android:title="Novo produto"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_pedidos"
+        android:title="Pedidos"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_configuracoes"
+        android:title="Configurações"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_sair"
+        android:title="Sair"
+        app:showAsAction="never"/>
+
+</menu>

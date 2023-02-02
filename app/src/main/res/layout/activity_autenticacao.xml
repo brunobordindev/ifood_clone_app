@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/red_logo"
+        android:padding="16dp"
+        tools:context=".activity.AutenticacaoActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_nome_aut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_white"
+                android:inputType="textEmailAddress"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:hint="Nome" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email_aut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_white"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_senha_aut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_white"
+                android:inputType="textPassword"
+                android:hint="Senha" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:text="Logar" />
+
+            <Switch
+                android:id="@+id/switch_tipo_aut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Cadastre-se" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_tipo_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:text="Usuário" />
+
+            <Switch
+                android:id="@+id/switch_tipo_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Empresa" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_acessar_aut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Acessar" />
+
+
+    </LinearLayout>
+
+</layout>
